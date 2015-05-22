@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="opinioni.xsl"?>
+
+<opinioni>
+
+  <opinione>
+    <nome>Mario</nome>
+    <cognome>Rossi</cognome>
+    <recensione>Pro Loco bellissima</recensione>
+  </opinione>
+  
+  <opinione>
+    <nome>Luca</nome>
+    <cognome>Verdi</cognome>
+    <recensione>Eventi stupendi</recensione>
+  </opinione>
+  
+  <opinione>
+    <nome>Marco</nome>
+    <cognome>Bianchi</cognome>
+    <recensione>Manifestazioni magnifiche</recensione>
+  </opinione>
+  
+</opinioni>

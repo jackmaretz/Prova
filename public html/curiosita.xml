@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="curiosita.xsl"?>
+
+
+<ricette>
+
+  <ricetta>
+    <titolo>Risotto al Radicchio Trevigiano Mantecato al Parmigiano</titolo>
+    <numpers>Per 4 persone</numpers>
+    <immagine src="immaginiricette/risottoradicchio.jpg">immaginiricette/risottoradicchio.jpg</immagine>
+    <ingredienti>
+      <ingrediente>320 gr di riso per risotti</ingrediente>
+      <ingrediente>1 cipolla bianca</ingrediente>
+      <ingrediente>1 testa di radicchio trevigiano</ingrediente>
+      <ingrediente>1 noce di burro</ingrediente>
+      <ingrediente>1 cucchiaio di dado vegetale</ingrediente>
+      <ingrediente>120 gr di Parmigiano</ingrediente>
+      <ingrediente>Olio Evo</ingrediente>
+      <ingrediente>Pepe nero</ingrediente>
+      <ingrediente>Sale</ingrediente>
+    </ingredienti>
+    <svolgimento>
+      Tritare finemente il radicchio e tenere da parte. Tritare finemente la 
+      cipolla e farla rosolare in una pentola a fondo alto con olio e burro.
+      Aggiungere il radicchio e lasciarlo appassire qualche minuto, aggiungere 
+      il riso e procedere a tostatura, sfumare con il vino bianco e procedere a
+      cottura con il brodo vegetale bollente, al termine mantecare con il 
+      parmigiano gratuggiare, pepe nero macinato e servire caldo decorando con 
+      foglioline tenere di radicchio.
+    </svolgimento>
+  </ricetta>
+  
+  <ricetta>
+    <titolo>Pasta con Asparagi e Ricotta</titolo>
+    <numpers>Per 4 persone</numpers>
+    <immagine src="immaginiricette/pastaricottaasparagi.jpg">immaginiricette/pastaricottaasparagi.jpg</immagine>
+    <ingredienti>
+      <ingrediente>400 gr di pasta tipo ditali</ingrediente>
+      <ingrediente>300 gr di asparagi</ingrediente>
+      <ingrediente>150 gr di ricotta fresca</ingrediente>
+      <ingrediente>Parmigiano grattugiato</ingrediente>
+      <ingrediente>Sale</ingrediente>
+    </ingredienti>
+    <svolgimento>
+      Pulite e lavate gli asparagi, lasciate da parte le punte e tagliate il
+      resto a pezzi. Procedete lessando i gambi degli asparagi per 10 minuti, 
+      aggiungete le punte e lasciatele lessare ancora per 10 minuti. Scolate 
+      gli asparagi e frullate i gambi con la ricotta. Nel frattempo cuocete
+      e scolate la pasta al dente. Condite la pasta con la crema di asparagi,
+      le punte lessate e cospargete di parmigiano. 
+    </svolgimento>
+  </ricetta>
+  
+  <ricetta>
+    <titolo>Pasta con Peperoni</titolo>
+    <numpers>Per 6 persone</numpers>
+    <immagine src="immaginiricette/pastapeperoni.jpg">immaginiricette/pastapeperoni.jpg</immagine>
+    <ingredienti>
+      <ingrediente>450 gr di pasta corta</ingrediente>
+      <ingrediente>4 peperoni</ingrediente>
+      <ingrediente>1 mozzarella di bufala</ingrediente>
+      <ingrediente>Semi di finocchietto selvatico</ingrediente>
+      <ingrediente>Olive verdi e nere</ingrediente>
+      <ingrediente>1 cucchiaio di concentrato di pomodoro</ingrediente>
+      <ingrediente>Basilico</ingrediente>
+      <ingrediente>Un tocco di curry</ingrediente>
+    </ingredienti>
+    <svolgimento>
+      Tagliate a striscioline i peperoni e fateli cuocere con le olive in olio
+      evo. Dapprima coperti, poi scoperchiate e aggiungete i semi di 
+      finocchietto frantumati. Se gradite, verso met&#224; cottura un
+      cucchiaio di concentrato di pomodoro giusto a "sporcare" e il curry. A
+      fine cottura basilico spezzettato a profumare. Cuocete la pasta,
+      scolate al dente, tuffatela nel sugo dei peperoni, fatela saltare
+      2 minuti per insaporirla e aggiugnete la mozzarella "sfilacciata" 
+      a pezzetti. Spegnete e servite. Ottima anche tiepida.
+    </svolgimento>
+  </ricetta>
+  
+</ricette>
+    

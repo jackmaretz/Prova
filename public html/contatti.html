@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Contatti - Pro Loco di Zero Branco</title>
+<meta name="keywords" content="Pro Loco Zero Branco, Eventi Zero Branco, Feste Zero Branco" />
+<meta name="description" content="Sito della Pro Loco; contiene informazioni sulle sagre e sugli eventi cittadini." />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />	
+<meta name="viewport" content="height=device-height, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />	
+<meta name="author" content="Giulia Zanibellato, Giacomo Maretto, Patrizio Stella" />
+<meta name="rating" content="general" />
+
+<link rel="stylesheet" type="text/css" href="css/custom.css" />
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Pinyon+Script" />
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quattrocento+Sans" />
+
+</head>
+
+<body>
+
+
+<div class="header">
+  <h1>Pro Loco di Zero Branco</h1>
+</div>
+
+<div class="horizontalmenu">
+  <ul>
+    <li>Home</li>
+    <li><a href="eventi.xml">Eventi</a></li>
+    <li>Galleria</li>
+    <li>Curiosit&#224;</li>
+    <li>Contatti</li>
+    <li>Opinioni</li>
+  </ul>
+</div>
+
+<div class="corpo">
+
+<h2>Contatti</h2>
+  <p>Pro Loco di Zero Branco</p>
+  <p>Segreteria: Via Alessandro Manzoni, 20/D</p>
+  <p>Zero Branco - 31059 (TV)</p>
+  
+  <p>Orari segreteria:</p>
+  <ul>
+    <li>Marted&#236; dalle 15.00 alle 17.00</li>
+    <li>Gioved&#236; dalle 15.00 alle 17.00</li>
+    <li>Sabato dalle 10.00 alle 12.00</li>
+  </ul>
+  
+  <div id="mappa">
+  <iframe id="framemappa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2791.636439004152!2d12.161813653816552!3d45.           59785283925472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47793455f9a39589%3A0x51d35237d1caa79f!2sPro+Loco!5e0!3m2!1sit!2sit!4v1421142899464" width="1600" height="1000" frameborder="0" style="border:0"></iframe>
+  </div>
+  
+<div class="contatti">
+<form action="" method="post">
+
+<fieldset>
+  <legend>Dati dell'utente:</legend>
+    <label for="name">Nome:</label>
+		<input name="name" id="name" value="" maxlenght="15" /> 
+		<label for="surname">Cognome:</label>
+		<input name="surname" id="surname" value="" maxlenght="30" /> 
+		<label for="email">Email:</label>
+		<input name="email" id="email" value="" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" />
+</fieldset>
+<fieldset>
+  <legend>Testo del messagio:</legend>
+    <label for="message">Messaggio:</label>
+		<textarea rows="30" cols="25" name="message"></textarea>
+</fieldset>
+
+<fieldset>
+  <legend>Controllo e invio</legend>
+  <input class="button" type="button" name="controlla" id="controlla" value="Controlla campi"  tabindex="11" onclick="controllaCampi();"/>			
+	<input class="button" type="reset" name="cancella"  id="cancella" value="Cancella tutto" tabindex="12" />
+	<input class="button" type="submit" name="bottoneinvia" id="bottoneinvia" value="Invia" tabindex="13"  />
+	
+  </form>
+  </div> 
+  
+<FORM action="../cgi-bin/primo.pl" method="post">
+First Name: <input type="text" name="first_name">  <br>
+
+Last Name: <input type="text" name="last_name">
+
+<input type="submit" value="Submit">
+</FORM>
+  
+  </div>
+  </div>
+  <div class="footer">
+  <p>Pro Loco di Zero Branco</p>
+  <p>Telefono: <a href="tel:+39042297613">0422 97613</a></p>
+  <p>Email: <a href="mailto:segreteria@prolocozerobranco.it">segreteria@prolocozerobranco.it</a></p>
+</div>  
+
+  </body>
+  </html>

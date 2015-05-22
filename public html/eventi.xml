@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="eventi.xsl"?>
+
+
+
+<eventi>
+
+      
+    <evento>
+      <nome>Festa di Primavera</nome>
+      <datainizio>2015-01-09</datainizio>
+      <datafine>2015-01-19</datafine>      
+      <locazione>Presso la sede principale (Via Taliercio)</locazione>
+      <immagine src="immagini/asparagi.jpg">images/asparagi.jpg</immagine>
+    </evento>
+    
+    <evento>
+      <nome>Mostra del Radicchio</nome>
+      <datainizio>2015-02-08</datainizio>
+      <datafine>2015-02-18</datafine>
+      <locazione>Presso la sede principale (via Taliercio)</locazione>
+      <immagine src="images/radicchio.jpg">images/radicchio.jpg</immagine>
+      <linkdescr href="festaradicchio.xml">festaradicchio.xml</linkdescr>
+    </evento>
+    
+    <evento>
+      <nome>Zerock</nome>
+      <datainizio>2015-03-08</datainizio>
+      <datafine>2015-03-18</datafine>
+      <locazione>Presso la piazza di Zero Branco</locazione>
+      <immagine src="images/palloncini.jpg">images/palloncini.jpg</immagine>
+    </evento>
+    
+    <evento>
+      <nome>Festa del Peperone</nome>
+      <datainizio>2015-04-08</datainizio>
+      <datafine>2015-04-18</datafine>
+      <locazione>Presso la sede principale (Via Taliercio)</locazione>
+      <immagine src="images/peperoni.jpg">images/peperoni.jpg</immagine>
+    </evento>
+    
+    <evento>
+      <nome>Festa di Carnevale</nome>
+      <datainizio>2015-02-11</datainizio>
+      <datafine>2015-02-17</datafine>
+      <locazione>Presso la piazza di Zero Branco</locazione>
+      <immagine src="images/carnevale.jpg">images/carnevale.jpg</immagine>
+    </evento>
+    
+</eventi>
+    

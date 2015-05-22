@@ -1,0 +1,374 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Quattrocento Sans";
+  text-align: justify;
+  }
+  
+  h1 {
+  font-size: 4em;
+  padding: 0.5em;
+  margin: 0.5em;
+  }
+  
+  h2 {
+  text-align: center;
+  font-size: 3.3em;
+  padding: 0.5em auto;
+  margin: 0.5em auto;
+  }
+  h3 {
+  text-align: center;
+  font-size: 2.1em;
+  padding: 0.45em auto;
+  margin: 0.45em auto;
+  }
+
+.header {
+  height: 100%;
+  background: url("../images/Sfondo.jpg") no-repeat center center;
+  background-size: cover;
+  }
+  
+.header h1 {
+  color: white;
+  position: absolute;
+  right: 7%;
+  bottom: 7%;
+  font-family: "Pinyon Script";
+  font-size: 3em;
+  }
+
+.horizontalmenu {
+  background-color: #DEB887;
+  text-align: center;
+  list-style-type: none;;
+  margin: 0;
+  padding: 0.1em;
+  font-size: 1.5em;
+  }
+
+.horizontalmenu li {
+  background-color: #DEB887;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  padding: 0.01em 0.5em;  
+  margin: 0;
+  }
+  
+.horizontalmenu li a {
+  color: #8B4513;
+  text-decoration: none;
+  }
+
+.horizontalmenu li a:hover {
+  color: #A52A2A;
+}
+  
+.corpo {
+  width: 90%;
+  text-align: center;
+  margin: 3%;
+  padding: 2%;
+  *width: 100%;
+  }
+
+  
+.corpo p {
+  font-size: 1.2em;
+  text-align: center;
+  }
+  
+.corpo img {
+  width: 100%;
+  }
+
+.corpo ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+#ricetta {
+  font-weight: bold;
+  }
+#opinione {
+  display: inline;
+  }
+
+.contatti {
+  text-align: center;
+  width: 90%;
+  margin: 3%;
+  padding: 2%;
+  }     
+#contattisinistra {
+  display: block;
+  float: left;
+  width: 60%;
+  margin: 1%;
+  padding: 1%;
+  }
+#contattisx {
+  float: left;
+  display: block;
+  width: 50%;
+  margin: 1%;
+  padding: 1%;  
+  }
+#contattisx label {
+  display: block;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  }
+#contattidx {
+  float: right;
+  display: block;
+  width: 34%;
+  margin: 1%;
+  padding: 1%; 
+  }
+#contattidestra {
+  display: block;
+  float: right;
+  width: 30%;
+  margin: 1%;
+  padding: 1%;  
+  }
+
+.galleria {
+  text-align: center;
+  width: 90%;
+  margin: 3%;
+  padding: 2%;
+  }
+#galleriasinistra {
+  display: block;
+  float: left;
+  width: 64.67%;
+  margin: 1%;
+  padding: 1%;
+  moz-box-sizing: border-box;
+  webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+#galleriasx {
+  float: left;
+  display: block;
+  width: 48%;
+  margin: 1%;
+  padding: 1%;
+  moz-box-sizing: border-box;
+  webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
+#galleriadx {
+  float: right;
+  display: block;
+  width: 48%;
+  margin: 1%;
+  margin-right: 0%;
+  padding: 1%; 
+  padding-right: 0%;
+  moz-box-sizing: border-box;
+  webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+#galleriadestra {
+  display: block;
+  float: right;
+  width: 31.33%;
+  margin: 1%;
+  padding: 1%;
+  moz-box-sizing: border-box;
+  webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+  
+.galleriaorizzontale {
+  text-align: center;
+  width: 90%;
+  margin: 3%;
+  padding: 2%;
+  }
+
+#galleriaorsx {
+  display: block;
+  float: left;
+  width: 47%;
+  margin: 2%;
+  padding: 1%;
+  margin-left: 2%;
+  moz-box-sizing: border-box;
+  webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
+#galleriaordx {
+  display: block;
+  float: right;
+  width: 46%;
+  margin: 2%;
+  padding: 1%;
+  margin-right: 1%;
+  moz-box-sizing: border-box;
+  webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
+.formricetta {
+  text-align: center;
+  width: 90%;
+  margin: 3%;
+  padding: 2%;
+  } 
+
+.formricetta label {
+  display: inline;
+  margin: 4%;
+  }
+    
+.formricetta input {
+  padding: 0.5%;
+  margin: 1%;
+  }    
+  
+.formricetta button {
+  display: block;
+  }
+
+.button {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+	background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+	background-color:#ffffff;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+	background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+	background-color:#f6f6f6;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+
+ #mappa {
+  width: 100%;
+  height: 100%;
+  margin: 4% auto;
+  }
+  #framemappa {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  }
+
+
+.footer {
+  clear: both;
+  background-color: #DEB887;
+  text-align: center;
+  font-size: 1em;
+  padding: 1em;
+  }
+
+#check input {
+  display: none;
+  background: #FFDAB9;
+}
+
+label[for="check"] {
+  cursor: pointer;
+  color: red;
+  padding: 1% 8%;
+  font-weight: bold; 
+}
+
+input[for="check"] {
+  width: 30%;
+  }
+
+#selezione {
+ width: 90%; 
+ margin: 1.5%;
+ padding: 1.5%;
+ }
+
+ #selezione input {
+ margin-right: 3%;
+ margin-top: 2%;
+ }
+
+#selezione form {
+  visibility: hidden;
+  margin: 0.5%;
+  padding: 0.5%;
+}
+
+input#check:checked ~ form {
+  visibility: visible;
+}
+
+[for="check"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+    
+}
+
+input[type=checkbox]:checked ~ [for="check"] span:last-of-type {
+    display: block;
+    visibility: visible;
+}
+
+input[type=checkbox]:checked ~ [for="check"] span:first-of-type {
+    display: none-inline;
+    visibility: hidden;
+}
+
+#nomeopinioni {
+  font-size: 1.75em;
+  font-weight: bold;
+  }
+  
+#info {
+  margin: 2.5%;
+  padding: 2.5%;
+  }
+  
+#info {
+  margin: 2.5%;
+  padding: 2.5%;
+  } 
+
+.caricaimmagini {
+  display: block;
+  }
+
+
