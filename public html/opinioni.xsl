@@ -64,9 +64,8 @@ Nome: <input type="text" name="nomeOpinione" />
 Cognome: <input type="text" name="cognomeOpinione" />
 
 
-<label for="testoopinione">La tua opinione: </label>
-
-<input type="text" /> 
+<label for="testoOpinione">La tua opinione: </label>
+<input type="text" name="testoOpinione"/> 
 
 <input type="submit" value="Submit" />
 
