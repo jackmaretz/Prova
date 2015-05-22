@@ -58,23 +58,19 @@
 esprimere un pensiero su un evento a cui avete partecipato? Nessun problema: 
 vi baster&#224; compilare il form sottostante.</p>
 
-<div id="selezione">
-  <input id="check" type="checkbox" />
-  <label for="check">
-    <span>Visualizza il form</span>
-    <span>Nascondi il form</span></label>    
-  
-  <form id="opinioni" action="" method="post">
-  <label for="nomeopinione">Il tuo nome: </label>
-  <input type="text" />
-  <label for="cognomeopinione">Il tuo cognome: </label>
-  <input type="text" />
-  <label for="testoopinione">La tua opinione: </label>
-  <input type="text" /> 
-   
-  </form>
-  
- </div> 
+<FORM action="../cgi-bin/primo.pl" method="post">
+Nome: <input type="text" name="nomeOpinione" />  
+
+Cognome: <input type="text" name="cognomeOpinione" />
+
+
+<label for="testoopinione">La tua opinione: </label>
+
+<input type="text" /> 
+
+<input type="submit" value="Submit" />
+
+</FORM>
 
 <p>Queste sono le opinioni di chi ci ha gi&#224; visitato:</p>
 
