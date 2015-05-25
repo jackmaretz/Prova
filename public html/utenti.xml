@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<utenti>
+
+<utente>
+  <nome>giacomomaretto</nome>
+  <password>giacomomaretto</nome>
+</utente>
+
+<utente>
+  <nome>patriziostella</nome>
+  <password>patriziostella</nome>
+</utente>
+
+<utente>
+  <nome>giuliazanibellato</nome>
+  <password>giuliazanibellato</nome>
+</utente>
+
+</utenti>
