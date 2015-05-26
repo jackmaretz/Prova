@@ -1,0 +1,10 @@
+html{background:#000;}
+body{width:100%;margin:0;min-width:500px;}
+#logo{background-size:contain;}
+#submenu span span{display:none;}
+#content{padding:2em;}
+table {margin-left:auto;margin-right:auto;width:100%;}		
+	td,th{padding:0.1em;}	
+	table a{margin-left:0px;}
+	table img{display:none;}
+dd img{display:none;}

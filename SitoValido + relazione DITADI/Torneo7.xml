@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Iscritti.xsl"?>
+<iscritti giorno="Domenica 7" xmlns="http://www.Iscritti.com" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:schemaLocation="http://www.Iscritti.com Iscritti.xsd">
+</iscritti>

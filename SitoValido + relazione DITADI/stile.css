@@ -1,0 +1,125 @@
+﻿html{background-color:#000;background-image:url(Immagini/SfondoLegno.jpg);}
+body{margin:40px 50% 10px 10%;padding:0;font-family:Times New Roman,sans-serif;background-color:#000;width:80%;border:1px solid #fff;color:#fff;}
+/*Stili per l'header e la barra con il path*/
+#header{width:100%;height:150px;}	
+	#logo{margin:0;background-image:url(Immagini/LogoSemi.png);width:100%;height:100%;background-repeat:no-repeat;background-position:center center;}
+	#logo span{display:block;height:0;overflow:hidden;}
+#breadcrumb{padding:0.2em;background-color:#880015;color:#fff;border-top:1px solid red;border-bottom:1px solid red;font-style:italic;}
+	#breadcrumb a{font-weight:bold;}
+/*Stili per il menù di navigazione*/
+	#nav{float:left;width:200px;}
+	#nav a{color:#fff;text-decoration:none;border-bottom:1px solid #000;}
+	#nav a:hover{border-bottom-color:#fff;}
+	#nav a:visited{border-bottom-color:#fff;}
+	#nav>ul{margin:0;padding:0;margin-top:60px;}
+	#nav>ul>li{display:block;width:160px;margin:30px 0px 0px 20px;text-align:center;background-image:url(Immagini/SfondoHover.png);background-repeat:no-repeat;}
+	/*Stile per i simboli dei semi della pagina corrente*/
+	#nav>ul>li span{letter-spacing:3px;margin-left:5px;margin-right:5px;color:#880015;font-size:1.3em;}
+	/*Stile per la pagina corrente*/
+	#nav>ul .corrente{font-size:1em;margin-left:0px;width:200px;display:block;text-align:center;text-transform: uppercase;color: #fff;background:inherit;}	
+	/*Stili del div e transizione applicata al div quando l'hover viene tolto*/
+	#nav div{padding:5px 0px 5px 0px;border-bottom:1px solid #000;border-top:1px solid #000;background-color:#000;transition:border-color 1s ,background-color 1s;}
+	/*Stili del div con l'hover e transizione applicata al div quando il mouse passa sopra il div (i valori della transizioni con l'hover si sostituiscono a quelli della regola generale producendo tempi diversi della transizione in entrata e uscita)*/
+	#nav div:hover{border-color:#fff;background-color:rgba(0,0,0,0);transition:border-color 3.5s ,background-color 2.5s 0.3s;}
+	/*Dichiarazioni della transizione con i prefissi proprietari dei browser per compatibilità con i browser meno aggiornati*/
+	#nav div{-webkit-transition:border-color 1s ,background-color 1s;-moz-transition:border-color 1s ,background-color 1s;-ms-transition:border-color 1s ,background-color 1s;-o-transition:border-color 1s ,background-color 1s;}
+	#nav div:hover{-moz-transition:border-color 3.5s,background-color 2.5s 0.5s;-webkit-transition:border-color 3.5s,background-color 2.5s 0.3s;-ms-transition:border-color 4s,background-color 3s 0.5s;-o-transition:border-color 4s,background-color 3s 0.5s;}		
+#submenu{display:block;margin:0px;width:170px;margin-top:10px;padding-left:70px;font-size:1em;text-transform:none;text-align:left;} /*Solo per il sottomenu' nella sezione Tornei*/
+	#submenu div{display:inline;font-size:0.7em;}
+	#submenu li{margin-top:5px;}
+	#submenu a{margin-left:5px;color:#fff;font-size:1em;}
+	#submenu a:hover{color:#880015;border-color:#880015}
+	#submenu .correnteS{color:#880015;text-transform:uppercase;font-size:0.9em;margin-left:10px;}	
+#content{margin-left:200px;border-left:1px solid #fff;padding:4em;padding-top:2.5em;padding-bottom:1em;min-height:481px;}
+	dt{background-color:#880015;margin:0;margin-top:2em;padding:0.3em;font-weight:bold;border:1px solid red;border-radius:15px 15px 0px 0px;text-align:center;}
+	dd{background-color:#fff;color:#000;margin:0;padding:0.8em;border-radius:0px 0px 15px 15px;}
+		dd img{float:left;}
+		dd p{margin:0px;margin-top:5px;}
+	/*Stili per la tabella del programma*/
+	table {border-collapse:collapse;text-align:center;background-color:#fff;color:#000;}		
+	td,th{padding:0.5em;border:1px solid #777;}
+	thead,tfoot{background-color:#880015;color:#fff;}
+	table caption{margin-top:2em;margin-bottom:0.5em;font-size:1.5em;color:#fff;}		
+	img{vertical-align:middle;}
+	.sx{text-align:left;}
+	/*Stili per la definizione dei premi*/
+	#premi ul{display:inline-block;margin-top:5px;margin-bottom:20px;padding:0;padding-left:40px;}
+	/*Stili per il regolamento*/
+	#regolamento dt{margin:0;padding:0;border-width:0;background-color:#000;font-size: 1.3em;color: #880015;}
+	#regolamento dd {padding-bottom: 1em;background-color:#000;color:#fff;}
+	#regolamento li{list-style: circle;}
+	/*Stili per la pagina dei contatti*/
+	#mappa{margin-bottom:2.5em;}
+	iframe{border:0;max-width:600px;width:100%;height:300px;}
+	/*Stili per la form di iscrizione*/
+	fieldset{margin-top:20px;}
+	form{display:inline-block;width:75%;background-size:contain;margin:0;padding:0;text-align:left;}/*inline-block per non farlo lungo tutta la pagina*/
+		form label{display:inline-block;width:110px;padding:0;margin:20px 0 0 0;text-align:right;} /*La proprieta' width e' ignorata per gli inline*/	
+		form input{width:170px;margin:0 0 0 15px;}
+		#reg{width:initial;margin-left:20px;}
+		#regolamento{width:initial;}
+		form p{margin:0;display:inline;}
+		form div{color:rgb(136,0,21);font-weight:bold;}
+		#iscriviti{margin-top:20px;}	
+	/*Stili generali delle pagine*/
+	em{font-style:italic;font-weight:bold;}
+	h1{text-align:center;font-size:1.2em;margin-top:1em;margin-bottom:2em;}
+	ul{list-style-type:none;}
+	ol{margin:0;padding:1em 0em 0em 2em;}
+	/*Stili per le immagini*/
+	#imgHome{max-width:499px;max-height:301px;}
+	#imgTornei{max-width:400px;max-height:250px;}
+	.centro{display:block;margin:auto;margin-top:3em;text-align:center;width:70%;}
+#footer{font-size:0.9em;text-align:center;border-top:1px solid #fff;padding-top:5px;}
+	#footer p{display:inline-block;vertical-align:top;padding-top:4px;margin:0;margin-left:20px;}		
+	#footer img{vertical-align:top;padding-top:2px;}	
+	#fb{display:inline-block;height:24px;width:24px;margin-left:25px;background-image:url(Immagini/fb.gif);}
+	#tw{display:inline-block;height:24px;width:24px;background-image:url(Immagini/tw.gif);}
+
+
+
+/*Stili per i link nella pagina: stile generale,per i link nella tabella di iscrizione ,i link nella definizione dei giochi e per i link di aiuto alla navigazione e quelli posti in fondo alla pagina*/
+a{color:#fff;}
+table a{display:inline-block;color:#000;cursor:pointer;margin-left:10px;}
+dd a{display:block;color:#000;margin-top:10px;}
+#content a:visited{color:red; }
+#multilink a{display:inline-block;margin-left:10px;}
+.saltaNav{display:none;}
+.torna{display:block;text-align:center;margin-top:4em;}
+
+#iscritti{width:30%;height:19em;overflow:auto;border:1px dotted #fff;}
+#datiPersonali{list-style-type:none;margin-bottom:6em;}
+#datiPersonali li{margin-top:10px;}
+#lasciaMargine{margin-bottom:10em;}
+
+	
+/* Da Migliorare/Fare
+1-VALIDARE TUTTO!! (Lo scheletro generale e' gia' valido)
+2-controllare se le transizioni sono supportate da tutti i browser senza prefisso proprietario.
+3-ACCESSIBILITA' (ricordarsi anche i tabindex)!!!
+4-controllare regole css
+
+
+Da scrivere nella relazione:
+
+
+4-Controlli della form di iscrizione ai tornei con javascript:
+Nella form per l'iscrizione ai tornei viene chiesto di inserire nome,cognome,codice fiscale (obbligatori) e almeno un recapito tra email e telefono.Inoltre è obbligatorio accettare il regolamento del club.
+I controlli vengono effettuati dopo che l'input perde il focus tramite l'evento onBlur() e quando la form viene inviata con il pulsante submit.Si è scelto di non usare una sola espressione regolare per il controllo dell'input,la si è infatti divisa in 2 o 3 controlli per poter 
+differenziare il messaggio di errore e poter (almeno in parte) guidare l'utente a una più rapida risoluzione dell'errore.
+Anche nei controlli effettuati dopo il tentato invio della form si è scelto di effettuare i controlli in modo da non disorientare e infastidire l'utente.
+Infatti vengono controllati gli errori di tutti i campi senza interrompersi dopo il primo errore trovato,questo per evitare che l'utente debba correggere un errore per volta nel caso di più campi sbagliati.
+Sempre nell'ipotesi che l'utente abbia sbagliato a compilare più campi e possa scegliere di correggerli nell'ordine che preferisce, si è evitato di portare il focus al campo della form errato,
+costringendo l'utente a doverlo ricompilare fino a che non sia esatto.
+Controlli input singoli:
+_nome: I nomi permessi devono avere le seguenti caratteristiche: Contenere almeno due caratteri (contenuto nel seguente controllo,ma viene dato un diverso messaggio d'errore),iniziare e finire con una lettera,contenere solo lettere o spazi
+_cognome:Stessi controlli effettutati per il cognome,viene permesso in più anche l'apostrofo
+_codice fiscale:Vengono permesse solo le lettere maiuscole,per il resto è controllata la sintassi di un corretto codice fiscale. Non ci sono controlli sulla correttezza della semantica,se non per il giorno di nascita:
+infatti la prima relativa al giorno di nascita è richiesta essere compresa tra 0 e 7 (31 giorni possibili + 40 aggiunti in caso di sesso femminile)
+_email:viene permesso l'inserimento di caratteri alfanumerici e i caratteri più frequenti ('.','_','-') prima dell'obbligatorio carattere '@'.Poi sper il dominio devono essere presenti da 2 a piu' lettere minuscole, dopo il '.'
+invece sono permesse solo da 2 a 4 lettere minuscole
+_telefono:I telefoni consentiti devono contenere solo da 6 a 10 cifre.
+Ovviamente i controlli fatti possoono essere ulteriormente raffinati: si potrebbe ad esempio controllare che nel nome non ci siano maiuscole se non all'inizio del nome o solo in presenza di tutte maiuscole,che non ci siano piu' spazi in
+sequenza,che tra spazi ci siano almeno due lettere,che l'apostrofo sia solo contenuto tra lettere.....
+
+*/

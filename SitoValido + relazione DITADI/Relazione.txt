@@ -1,0 +1,155 @@
+Manca l'inserimento dei tab index in tutte le pagine.
+
+
+Progettazione del Sito 
+
+-Argomento del sito e caratteristiche degli utenti
+
+Abbiamo scelto di sviluppare il sito di Arcella Club ,un'ipotetica sala giochi che permette a varie categorie di clienti di cimentarsi in giochi d'azzardo, vari giochi di carte, giochi da tavolo e non (biliardo,freccette).
+Abbiamo cercato di rendere il sito più verosimile possibile , fornendo quindi varie informazioni che si sarebbero specificate per un locale esistente come numero di telefono,email, indirizzo (ovviamente inventati) e contatti dello staff.
+Sempre in quest' ottica il sito rimanda anche a pagine su social network (facebook e twitter), e ha una mappa integrata presa da Google Maps.
+
+Queste decisioni sono state prese in fase di progettazione considerando anche le categorie di utenti che il sito si propone di raggiungere:
+come accennato sopra infatti Arcella Club non è solo una sala giochi per giocatori d'azzardo, ma cerca di essere un punto di riferimento anche per i giovani, offrendo loro la possibilità di giocare a giochi di carte,giochi da tavolo,
+biliardo,freccette e altri giochi.
+La pagina Facebook e Twitter quindi sono rivolte maggiormente a quest'ultima categoria di utenti, sebbene i social network siano molto diffusi anche tra gli adulti. 
+
+-Struttura del sito
+
+Il sito è composto principalmente da pagine (statiche) che servono a far conoscere all'utente il nostro Club e i servizi offerti, è inoltre presente una pagina che permette agli utenti di iscriversi ai tornei giocati nel Club
+tramite la compilazione di una form ; i dati inseriti dagli utenti vengono salvati in file XML ed elaborati in modo che l'utente possa vedere l'elenco degli iscritti per ogni torneo disponibile.
+Le pagine del sito sono le seguenti:
+
+-Homepage : Contiene la presentazione della sala giochi.
+-Giochi   : Sezione dedicata ai giochi d'azzardo del Club,per ogni gioco contiene una breve descrizione e il link a un file (esterno al sito) contenente le regole complete.
+-Tempo Libero : Sezione dedicata agli altri giochi offerti dal Club, anche in questa parte viene descritto ogni gioco brevemente lasciando all'utente la possibilità di leggere le regole complete su un file esterno.
+-Tornei : Sezione centrale del sito, la pagina contiene una breve introduzione e un sottomenù con le pagine per visionare e iscriversi ai tornei, la pagina degli eventi speciali e dei premi.
+
+-Programma (sezione di Tornei) : Contiene la tabella completa dei tornei che si terranno nel club per tutta la settimana, per ogni torneo si può controllare data, ora, tipo di gioco, costo di iscrizione(buy in) ed elenco dei partecipanti.
+-Iscrizione (sezione di Tornei) : Contiene la form di iscrizione ai tornei.
+-Eventi (sezione di Tornei) : Contiene gli eventi speciali che si terranno nella sala giochi fino alla fine dell'anno, data la lontananza dell'evento non è prevista l'iscrizione a questi tornei/giochi.
+-Premi (sezione di Tornei) : Contiene la lista dei premi dei tornei divisa per gioco.
+
+-Regolamento : Sezione contentente il regolamento del Club, per le regole di ogni gioco invece è presente il link alle regole complete nelle sezioni Giochi e Tempo Libero.
+-Dove Siamo : Contiene una mappa presa da Google Maps con il segnaposto del Club, numero di telefono, indirizzo e mail del club, componenti dello staff e loro email.
+
+Nella progettazione del sito si è scelto di puntare a una facile comprensione dei contenuti e dell'interfaccia del sito:
+I contenuti sono infatti organizzati in una gerarchia ristretta (sei sezioni) e poco profonda (pagine singole e solo una sezione distribuita in due livelli), il layout è un tipico schema a tre pannelli.
+Proprio per la semplicità del sito non è stata inserita una casella per la ricerca per l'utente o una mappa del sito,si è comunque prestato attenzione a non disorientare l'utente: sono stati utilizzati titoli corti,
+l'utente può sempre controllare dove si trova nella barra sopra il menù e può riconoscere le pagine che ha visitato grazie alla differente marcatura dei link non visitati e dei link visitati.
+Altre considerazioni di questo genere verranno trattate in seguito parlando dell' Accessibilità del sito.
+
+Realizzazione del Sito
+
+-Html e CSS
+
+Il layout del sito è elastico e progettato per adattarsi a diversi dispositivi.Per questo motivo sono stati realizzati tre fogli di stile che si alternano al variare delladimensione del dispositivo (o della finistra del browser sul pc).
+Oltre al foglio di stile per desktop (stile.css) e al foglio di stile per telefoni (mini.css), è stato aggiunto un foglio di stile intermedio (medium.css) utile per ottimizzare la visione della pagina su schermi leggermente maggiori,
+ma anche per rendere più armoniosa la differenza tra i due fogli di stile più estremi.
+In particolare il foglio di stile medio elimina il margine del body della pagina,riduce il padding del contenuto,rimuove le immagini dalla tabella e dalle liste di definizioni, mentre il foglio mini riduce ulteriormente il padding del contenuto
+e sposta il menù di navigazione al di sopra del contenuto per avere tutto lo spazio orizzontale disponibile per il contenuto.
+
+Le pagine rispettano lo standard XHTML 1.0 Strict,la pagina Dove Siamo è invece realizzata in Html5 perchè XHTML 1.0 Strict,a differenza di Html5, non permette l'uso del tag iframe.
+Come detto il layout è uno schema a tre pannelli,questo layout è mantenuto per tutte le pagine del sito che quindi presentano la stessa struttura html di base, composta da:
+
+-un header contenente un titolo che viene poi sostituito dal logo del club attraverso la tecnica dell'image replacement, nello specifico il tag <h1> contiene uno span con il testo che viene letto dagli screen reader, ma che viene
+nascosto con l'assegnazione di una altezza pari a 0 con il contenuto in eccesso che viene nascosto.L'immagine del logo è aggiunta tramite css perchè considerata un elemento puramente decorativo e non di contenuto.
+
+-una barra contenente il path in cui sono presenti i link delle pagine precedenti.
+
+-il menù di navigazione.E' definito come una lista di link che sono però contenuti da contenenitori generici (div) che servono a permettere un'effetto estetico nell'hover dei link e contemporaneamente a permettere il riconoscimento
+dei link visitati.La transizione prevede il cambio del colore del bordo e dell'immagine di sottofondo del contenitore dei link su cui sta passando il mouse.L'effetto dell'immagine di sottofondo è in particolare artificioso:dal momento 
+che la proprietà "transition:background-image" non è supportata nello stesso modo da tutti i browser (in Mozilla,Internnet Explorer e Safari la proprietà non è supportata e il cambio tra due immagini è repentino e non graduale), l'effetto graduale
+è dato dalla proprietà #nav div:hover presente nel css.
+Questa proprietà cambia gradualmente il colore di background del div contenente il link: prima dell'hover il div ha uno sfondo nero che copre l'immagine di sottofondo del list item corrispondente,con l'hover il colore del div
+diventa trasparente causando l'effetto di comparsa graduale dell'immagine di sottofondo.
+Il div è necessario perchè si è scelto di indicare i link visitati con un effetto sottolineato,questo effetto viene prodotto dal cambio di colore del bordo del link da nero a bianco
+(la proprietà a:visited{text-decoration:underline} è stata disattivata dai browser).
+Il sottomenù della classe tornei è una sottolista a cui vengono applicate regole css diverse per una diversa indicazione della pagina corrente.
+Prima dell'elenco dei link il menù contiene un aiuto alla navigazione per chi utilizza uno screen reader:è infatti presente un link che permette di passare al contenuto saltando la lista delle pagine.Questo link è nascosto ma viene
+letto dai dispositivi di sintesi vocale.
+
+-il contenuto.Oltre al semplice testo in paragrafi sono state utilizzate molte liste di definizioni per spiegare le regole,i premi o le caratteristiche per ogni gioco,evento o norma del club.
+La pagina Dove Siamo contiene una mappa presa da Google Maps.E' stato scelto di utilizzare un iframe perchè considerato il modo più semplice di far conoscere la nostra posizione all'utente senza rimandarlo ad altri
+siti.E' poi presente una serie di informazioni sulla sala giochi e la lista dei componenti dello staff con i relativi indirizzi email.
+La sottosezione Programma della sezione Tornei contiene invece una tabella dei tornei in programma per la settimana in corso.E' stata utilizzata una tabella perchè ritenuta l'elemento più adatto a contenere tutte le informazioni
+già dette sopra suddivise per torneo,considerazioni sull'accessibilità della tabella sono presenti nell' ultima parte della relazione.
+La pagina per l'iscrizione ai tornei è l'unica che permette l'interazione con l'utente,a cui vengono richiesti nome,cognome e almeno un recapito per l'iscrizione.In seguito si tratterà del controllo e della gestione dei dati inseriti dall'utente.
+E' importante dire che questa pagina contiene già nell'html i div per contenere i messaggi d'errore che possono essere generati dalla compilazione errata della form,questo principalmente per due motivi:
+-è più semplice e veloce la gestione degli errori con javascript,che sostituisce solo il messaggio senza creare/distruggere ogni volta il contenitore
+-non serve separare gli input della form tramite in tag <br/>,i div posizionati occupano il blocco che sarebbe occupato dall'interruzione di riga.Questo inoltre evita che ci siano spazi indesiderati quando il messaggio d'errore
+compare e si posiziona sotto all'input non corretto (si è scelto di scrivere il messaggio d'errore sotto e non a fianco per evitare che nel ridimensionamento della pagina i messaggi fuoriescano dal corpo).
+Tutte le immagini inserite nel contenuto delle pagine sono presenti anche nel codice html perchè sono immagini di contenuto utili a completare l'informazione data dalle pagine.
+
+-il footer contenente il link alla pagina dei contatti del Club e il collegamento alle pagine Facebook e Twitter.Sono inoltre presenti le immagini che indicano la validità del codice html e css: queste immagini sono lasciate nel
+codice Html perchè possono dare attraverso l'attributo alt un'informazione circa la bontà della pagina anche agli utenti non vedenti.
+Le immagini dei bottoni di Facebook e Twitter sono invece aggiunte tramite css perchè sono solo di abbellimento.
+
+-Javascript
+
+I dati inseriti nella registrazione della form vengono inizialmente controllati tramite javascript per impedire l'invio ripetuto al server di dati non corretti.In ogni caso i controlli vengono poi rifatti da Perl nel caso in cui
+l'utente non abbia javascript attivato o lo stia aggirando.
+Prima di parlare dei controlli effettuati sulla validità dei campi inseriti è utile specificare che ,essendo i tornei disputati nella sala giochi e non online, e dal momento che la registrazione deve essere confermata con la 
+consegna di un documento valido nel Club, si cerca di controllare il meglio possibile le informazioni inserite dall'utente, ben sapendo che le misure potrebbero essere ulteriormente raffinate.
+ 
+I controlli del nome,cognome,telefono ed email vengono effettuati dopo che il campo dell'input perde il focus tramite l'evento onblur e quando la form viene spedita al server (bloccando l'invio in caso di errori).
+Con l'invio viene anche controllato che l'utente abbia scelto un torneo e abbia accettato il regolamento del Club.
+Per il nome e il cognome si controlla che il valore inserito contenga almeno due caratteri,che inizi e finisca con una lettera e che contenga lettere o spazi (anche l'apostrofo per il cognome).Per il telefono si controlla che l'utente
+abbia inserito dalle 6 alle 10 cifre, per la mail si controlla la forma tipica di una mail.
+I controlli presenti nello script javascript sono volutamente suddivisi in più di un'espressione regolare: questo per cercare di differenziare il messaggio d'errore mandato a video a seconda del tipo di errore.
+Inoltre il controllo degli errori in javascript e Perl non viene fermato al primo errore trovato, si continua infatti a controllare tutti i campi per impedire che l'utente debba correggere un campo alla volta nel caso di più
+campi scorretti.
+
+-Perl
+
+Se i dati non presentano errori o se javascript non è attivato i dati con l'invio della form arrivano a perl.In realtà la pagina perl è proprio la form d'iscrizione, e stampa la form in due casi:
+-quando si arriva alla pagina per la prima volta
+-quando si riesce ad inviare una form con dati scorretti, nel qual caso la pagina viene ricompilata con la form che ha già negli spazi i dati inseriti dall'utente.
+Si è scelto di avere la form già nella pagina perl perchè, nel caso di dati inviati scorrettamente, la form deve comunque essere ristampata a video , passando se possibile i dati inseriti dall'utente i parametri inseriti, e la pagina che riceve i parametri deve essere per forza
+dinamica per poterli prendere in input.
+Se invece la form è compilata correttamente il programma perl inserisce i dati passati dall'utente in un file XML diverso a seconda del torneo al quale ci si sta iscrivendo, e stampa infine un messaggio d'avvenuta iscrizione con
+il riepilogo dei dati inseriti.
+I controlli effettuati in Perl sono gli stessi di quelli eseguiti via javascript,si suppone quindi che una volta spedita la form essa sia corretta, i dati vengono quindi ricontrollati solo per sicurezza.Se Perl trova errori però,
+non stampa un messaggio d'errore sotto al relativo input,ma crea una lista di tutti gli errori e li manda a video uno sotto l'altro (Per controllare che non ci siano errori si controlla la lunghezza della stringa contenente
+gli errori,che è inizializzata a una lunghezza fissa, invece di cambiare il valore di una variabile appena viene trovato un errore)
+
+-XML e XSL
+
+I dati corretti sono salvati come detto in un file XML.Vengono utilizzati più file XML (uno per torneo),in quanto avendo ogni torneo una lista partecipanti a sè, è più facile separare i dati rispetto a salvare ogni iscritto 
+nello stesso file e poi dover filtrare i partecipanti una volta che viene preparata la pagina contenente gli iscritti per ogni torneo.
+Nella tabella dei tornei è quindi presente un link ad ogni file XML con la lista dei partipanti al torneo specifico,il file XML viene renderizzato dopo che gli è stato applicato un foglio di stile XSL.
+Il foglio XSL produce una pagina strutturata come tutte le altre, ma che visualizza nel content l'elenco dei partecipanti del torneo.
+Viene usata una prima istruzione xsl per sscrivere nel titolo la data del torneo, poi viene prodotto un messaggio contenente il numero degli iscritti, o un messaggio diverso se ci sono 0 iscritti o uno solo.
+Infine se ci sono iscritti essi vengono visualizzati in una lista, per evitare che si venga a creare una pagina troppo lunga se gli iscritti sono più di 16 la lista viene inserita in un div di ampiezza fissa che permette con
+lo scroll di vedere la lista completa
+
+
+
+Accessibilità del Sito 
+
+Nella realizzazione del sito e nella fase di realizzazione sono state seguite il più possibile le linee guida per l'accessibilità ai contenuti web.
+Si è innanzitutto separata la struttura del sito dalla sua presentazione e dal comportamento: lo stile è stato inserito solo tramite fogli CSS importati,lo stesso vale per gli script javascript.
+Per le parti differenti dal testo si è cercato di fornire un'equivalente testuale: tutte le immagini inserite nel codice html hanno infatti l'attributo alt con una breve descrizione,mentre l'iframe utilizzato per la mappa
+specifica la sua funzione con l'attributo title.
+Un'altro accorgimento preso è stato l'inserimento di indicazioni che specificano la lingua per tutti i vocaboli stranieri utilizzati nei testi,sono state inoltre indicate le abbreviazioni utilizzate, con lo scopo di facilitare
+la letteura della pagina per i dispositivi utilizzati dai non vedenti.
+
+Si è inoltre prestato attenzione a non sottolineare parti di testo che non fossero ancore di link, le parti più importanti sono state rese con la scrittura in grassetto e in corsivo, per i link si è invece utilizzata la sottolineatura 
+convenzionale, e un colore diverso per i link visitati nel testo.
+Per i link nel menù di navigazione si è invece scelta la sottolineatura per i link visitati, convenzione richiamata anche dalla sottolineatura che ricevono i link non visitati del menù quando ci si passa sopra con il mouse.
+Un ulteriore attenzione per i link è stata l'indicazione di ancore che puntano a risorse diverse dalle normali pagine html, nello specifico per i file Pdf contenenti le regole dei giochi è stato indicato appunto il formato Pdf
+e la dimensione del file per evitare che l'utente scarichi un file senza volerlo.
+
+Per quanto riguarda l'uso dei tabindex per facilitare la navigazione da tastiera si è scelto di assegnare valori crescenti di questa proprietà ai link del menù e ai link alla pagine Facebook e Twitter, questo per consentire all'utente
+di spostarsi tra le pagine velocemente.
+Non sono invece state utilizzate delle accessKey per la difficoltà di trovare delle chiavi disponibili e perchè ritenute poco utili.
+
+Per l'header delle varie pagine si è fatto uso della tecnica dell'Image Replacement per rimpiazzare il testo del titolo (letto dagli screen reader e dai motori di ricerca) con il logo del Club.
+Per l'accessibilità della tabella dei tornei infine è stato usato l'attributo summary per riassumere le informazioni trasmesse dalla tabella, mentre per facilitare la lettura della tabella da parte di uno screen reader abbiamo
+contrassegnato le intestazioni di riga e colonna con l'attributo scope,più indicato degli headers per una tabella semplice e regolare.
+
+
+
+ 
+ 
+
