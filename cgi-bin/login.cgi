@@ -28,8 +28,8 @@ $exists = $root->exists("user[nome=\"$input{\"nome\"}\" and password=\"$input{\"
 if ($exists) {
 	$session = CGI::Session->new();
 	$session->param("nome", $input{nome});
-	print $session->header(-location => "loginView.cgi");     #DA CREARE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	print $session->header(-location => "logindash.cgi");     #DA CREARE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 }
 else {
 	$cgi = new CGI();
-	print $cgi->redirect("loginView.cgi");                   #DA CREAREEEEEEEEEEEEEEEEEEEEEEE!
+	print $cgi->redirect("login.cgi");                   #DA CREAREEEEEEEEEEEEEEEEEEEEEEE!
