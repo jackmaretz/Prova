@@ -28,7 +28,7 @@ $exists = $root->exists("user[nome=\"$input{\"nome\"}\" and password=\"$input{\"
 if ($exists) {
 	$session = CGI::Session->new();
 	$session->param("nome", $input{nome});
-	print $session->header(-location => "logindash.html");     #DA CREARE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	print $session->header(-location => "logindash.cgi");     #DA CREARE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 }
 else {
 	$cgi = new CGI();
