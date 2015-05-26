@@ -23,8 +23,8 @@
     
     <evento>
       <nome>Festa di Carnevale</nome>
-      <datainizio>2015-02-06</datainizio>
-      <datafine>2015-02-07</datafine>
+      <datainizio>2015-02-07</datainizio>
+      <datafine>2015-02-08</datafine>
       <locazione>Presso piazza Umberto I - Zero Branco</locazione>
       <immagine src="images/carnevale.jpg">images/carnevale.jpg</immagine>
     </evento>
