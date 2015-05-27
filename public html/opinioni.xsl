@@ -90,6 +90,7 @@ Cognome: <input type="text" name="cognomeOpinione" />
 <xsl:template match="opinione">
   <li>
     <p id="nomeopinioni"><xsl:value-of select="nome" />&#160;<xsl:value-of select="cognome" /></p>
+    <p><xsl:value-of select="festa" /></p>
     <p><xsl:value-of select="recensione" /></p>
   </li>
 </xsl:template>
