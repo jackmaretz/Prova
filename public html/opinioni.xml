@@ -4,18 +4,21 @@
 <opinioni>
 
   <opinione>
+    <festa>Festa dell'Asparago</festa>
     <nome>Mario</nome>
     <cognome>Rossi</cognome>
     <recensione>Pro Loco bellissima</recensione>
   </opinione>
   
   <opinione>
+    <festa>Festa del Peperone</festa>
     <nome>Luca</nome>
     <cognome>Verdi</cognome>
     <recensione>Eventi stupendi</recensione>
   </opinione>
   
   <opinione>
+    <festa>Festa del Radicchio</festa>
     <nome>Marco</nome>
     <cognome>Bianchi</cognome>
     <recensione>Manifestazioni magnifiche</recensione>
