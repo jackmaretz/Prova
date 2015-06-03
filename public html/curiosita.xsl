@@ -32,7 +32,7 @@
 
 <div class="horizontalmenu">
   <ul>
-    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html"><span xml:lang="en">Home</span></a></li>
     <li><a href="eventi.xml">Eventi</a></li>
     <li><a href="galleria.html">Galleria</a></li>
     <li>Curiosit&#224;</li>
