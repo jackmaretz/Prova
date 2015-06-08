@@ -58,7 +58,7 @@
 esprimere un pensiero su un evento a cui avete partecipato? Nessun problema: 
 vi baster&#224; compilare il form sottostante.</p>
 
-<FORM action="../cgi-bin/primo.pl" method="post">
+<FORM action="../cgi-bin/primo.pl" method="post" name="moduloform">
 Nome: <input type="text" name="nomeOpinione" />  
 
 Cognome: <input type="text" name="cognomeOpinione" />
