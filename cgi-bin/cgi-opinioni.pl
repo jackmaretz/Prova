@@ -117,7 +117,7 @@ sub stampaConferma {   #pagina di avvenuto successo inserimento opinione; può r
   END_HTML;
   print "<p>Grazie per la tua opinione, <em>$nome $cognome</em></p>";
   print "<p>Questa è la tua opinione inserita:</p>";
-  print "<p id="opinione">$testoOpinoni</p>";
+  print "<p id="opinione">$testoOpinone</p>";
   print "<p>Puoi andare a vedere la tua opinione inserita <a href="opinioni.xml">cliccando qui</a></p>";
   print "<p>Oppure puoi tornare alla <a href="index.html">pagina principale</a></p>";
   print "</div>";
