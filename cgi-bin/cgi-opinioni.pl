@@ -1,8 +1,8 @@
-#!usr/bin/perl  
+#!/usr/bin/perl -w
 
 use CGI;
-use CGI:Carp qw(fatalsToBrowsers);
-use XML:LibXML;
+use CGI::Carp qw(fatalsToBrowsers); #warnuing to browser
+use XML::LibXML;
 my $page = new CGI;
 
 if($page -> param('submit') ne 0 && $page -> param('submit') eq 'Invia') 
