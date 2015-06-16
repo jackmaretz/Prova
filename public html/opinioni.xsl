@@ -59,7 +59,7 @@
 esprimere un pensiero su un evento a cui avete partecipato? Nessun problema: 
 vi baster&#224; compilare il form sottostante.</p>
 
-<FORM action="../cgi-bin/primo.pl" method="post" name="moduloform">
+<FORM action="cgi-bin/cgi-opinioni.pl" method="post" name="moduloform">
 Nome: <input type="text" name="nomeOpinione" />  
 
 Cognome: <input type="text" name="cognomeOpinione" />
@@ -68,7 +68,7 @@ Cognome: <input type="text" name="cognomeOpinione" />
 <label for="testoOpinione">La tua opinione: </label>
 <input type="text" name="testoOpinione"/> 
 
-<input type="submit" value="Submit" />
+<input type="submit" id="Invia" value="Invia" />
 
 </FORM>
 
