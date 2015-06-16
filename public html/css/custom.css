@@ -4,6 +4,7 @@ html, body {
   height: 100%;
   font-family: "Quattrocento Sans";
   text-align: justify;
+  max-width: 100%;
   }
   
   h1 {
@@ -33,6 +34,7 @@ html, body {
   height: 65%;
   background: url("../images/Sfondo.jpg") no-repeat center center;
   background-size: cover;
+  margin: 0;
   }
   
 .header h1 {
@@ -49,21 +51,16 @@ html, body {
   text-align: center;
   list-style-type: none;
   margin: 0;
-  padding: 0.005%;
+  padding: 1em;
   font-size: 1.5em;
   }
   
-.horizontalmenu li {
-  margin: 0;
-  padding: 0;
-  }
-
 .horizontalmenu li {
   background-color: #DEB887;
   display: inline-block;
   zoom: 1;
   *display: inline;
-  padding: 0 1%;  
+  margin: 0 0.5em;
   }
   
 .horizontalmenu li a {
@@ -80,13 +77,13 @@ html, body {
   text-align: center;
   margin: 3%;
   padding: 2%;
-  *width: 100%;
   }
 
   
 .corpo p {
   font-size: 1.2em;
   text-align: center;
+  line-height: 150%;
   }
   
 .corpo img {
