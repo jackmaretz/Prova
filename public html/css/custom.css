@@ -32,7 +32,7 @@ html, body {
 
 .header {
   height: 65%;
-  background: url("../images/Sfondo.jpg") no-repeat center center;
+  background: url("../images/logo.png") no-repeat center center;
   background-size: cover;
   margin: 0;
   }
